@@ -5,10 +5,10 @@ const routes = [
   {
     path: '/',
     name: 'root',
-    component: () => import(/* webpackChunkName: 'list' */ '../CountriesList.vue'),
+    component: () => import(/* webpackChunkName: 'list' */ '../components/CountriesList.vue'),
   },
   {
-    path: '/details', // THEN, YOU WILL HAVE TO CHANGE THIS FOR A PARAM!
+    path: '/:id', // THEN, YOU WILL HAVE TO CHANGE THIS FOR A PARAM!
     name: 'details',
     component: () => import(/* webpackChunkName: 'details' */ '../components/CountryDetails.vue')
   },
