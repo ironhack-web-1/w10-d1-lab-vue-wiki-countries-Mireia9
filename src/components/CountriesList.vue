@@ -9,10 +9,10 @@
           <a
             v-for="country in countries"
             class="list-group-item list-group-item-action"
-            :href=idUrl(country)
+            :href="idUrl(country)"
           >
             <img src="https://flagpedia.net/data/flags/icon/72x54/aw.png" />
-            <p>{{country.name.common}}</p>
+            <p>{{ country.name.common }}</p>
           </a>
         </div>
       </div>
@@ -29,9 +29,9 @@ export default {
     };
   },
   methods: {
-    idUrl(countrie){
-        return countrie.name.common
-    }
-  }
+    idUrl(countrie) {
+      return countrie.name.common;
+    },
+  },
 };
 </script>
